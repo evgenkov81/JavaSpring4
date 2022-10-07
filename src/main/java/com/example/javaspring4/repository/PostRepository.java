@@ -2,13 +2,14 @@ package com.example.javaspring4.repository;
 
 
 import com.example.javaspring4.model.Post;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
-
+@Repository
 public class PostRepository {
     private final ConcurrentMap<Long, Post> allPosts;
     private final AtomicLong idCounter = new AtomicLong();
