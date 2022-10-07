@@ -1,6 +1,5 @@
 package com.example.javaspring4.service;
 
-
 import com.example.javaspring4.exception.NotFoundException;
 import com.example.javaspring4.model.Post;
 import com.example.javaspring4.repository.PostRepository;
